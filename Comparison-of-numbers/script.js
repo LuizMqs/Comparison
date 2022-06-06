@@ -1,8 +1,6 @@
 document.getElementById("button").addEventListener("click", function() {
     var first = document.getElementById("first").value
-    first = parseInt(first)
     var second = document.getElementById("second").value
-    second = parseInt(second)
 
     if (first == "" && second == "") {
         document.getElementById("result").innerHTML = "Os campos estão vazios"
@@ -17,6 +15,8 @@ document.getElementById("button").addEventListener("click", function() {
     }
 
     else {
+        first = parseInt(first)
+        second = parseInt(second)
 
         if (first > second) {
             document.getElementById("result").innerHTML = "O primeiro campo tem um valor superior quando comparado ao outro"
