@@ -1,6 +1,8 @@
 document.getElementById("button").addEventListener("click", function() {
-    const first = document.getElementById("first").value
-    const second = document.getElementById("second").value
+    var first = document.getElementById("first").value
+    first = parseInt(first)
+    var second = document.getElementById("second").value
+    second = parseInt(second)
 
     if (first == "" && second == "") {
         document.getElementById("result").innerHTML = "Os campos estão vazios"
